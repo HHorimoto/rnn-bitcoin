@@ -67,7 +67,4 @@ def create_dataset(root, batch_size, time_window=10):
     test_loader = DataLoader(test_dataset, batch_size=1, shuffle=False,
                              num_workers=2, pin_memory=True, worker_init_fn=worker_init_fn,)
     
-    datasets = {"train": train_dataset, "test": test_dataset}
-    dataloaders = {"train": train_loader, "test": test_loader}
-    
-    return datasets, dataloaders
+    return train_loader, test_loader
