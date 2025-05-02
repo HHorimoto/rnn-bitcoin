@@ -3,3 +3,4 @@ config:
   num_epoch: 10
   batch_size: 32
   learning_rate: 0.001
+  rnn_name: 'LSTM'
